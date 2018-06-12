@@ -80,14 +80,12 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-     if (checkCollision) {
-       endGame();
-     }
+     
     /**
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
-    else if (top < GAME_HEIGHT) {
+    if (top < GAME_HEIGHT) {
       function step() {
         rock.style.top = `${top += 2}px`;
 
