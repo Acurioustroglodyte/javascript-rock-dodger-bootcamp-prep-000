@@ -80,6 +80,7 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
+     console.log(rock)
     if (checkCollision(rock)) {
       endGame();
     }
@@ -179,7 +180,7 @@ function moveDodgerRight() {
    function step() {
      DODGER.style.left = `${dodger.style.left = positionToInteger(DODGER.style.left) + 4}px`;
      let position = positionToInteger(DODGER.style.left);
-  
+
      if (position < GAME_WIDTH - 40) {
        window.requestAnimationFrame(step);
     }
