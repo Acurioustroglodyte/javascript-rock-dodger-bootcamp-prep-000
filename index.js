@@ -94,7 +94,7 @@ function createRock(x) {
 
         if (top < GAME_HEIGHT) {
           window.requestAnimationFrame(step);
-          if (checkCollision(rock)) {
+          if (checkCollision(rock)) { // Remove this if statement if does not result in hit
             console.log('that\'s a hit');
             endGame();
           }
