@@ -179,7 +179,7 @@ function moveDodgerRight() {
    function step() {
      DODGER.style.left = `${dodger.style.left = positionToInteger(DODGER.style.left) + 4}px`;
 
-     if (position <= GAME_WIDTH) {
+     if (positionToInteger(DODGER.style.left) <= GAME_WIDTH) {
        window.requestAnimationFrame(step);
     }
   }
