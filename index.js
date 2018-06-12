@@ -17,7 +17,7 @@ var gameInterval = null;
  * but all of your work should happen below.
  */
 
-function checkCollision(rock) { 
+function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
   const top = positionToInteger(rock.style.top)
@@ -143,7 +143,6 @@ function moveDodger(e) {
    var position = DODGER.style.left;
 
    if (e.which == LEFT_ARROW) {
-     console.log(e.which);
     moveDodgerLeft();
     e.preventDefault();
     e.stopPropagation();
@@ -161,7 +160,7 @@ function moveDodgerLeft() {
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-
+   console.log('left');
    function step() {
      var position = DODGER.style.left;
      DODGER.style.left = `${position -= 4}px`;
