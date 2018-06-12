@@ -143,6 +143,7 @@ function moveDodger(e) {
    var position = DODGER.style.left;
 
    if (e.which == LEFT_ARROW) {
+     console.log(e.which);
     moveDodgerLeft();
     e.preventDefault();
     e.stopPropagation();
