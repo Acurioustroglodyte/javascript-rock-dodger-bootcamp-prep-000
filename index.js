@@ -81,7 +81,7 @@ function createRock(x) {
      * we should call endGame()
      */
     if (checkCollision(rock)) {
-      console.log('that\'s a hit')
+      console.log('that\'s a hit');
       endGame();
     }
     /**
