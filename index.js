@@ -128,8 +128,8 @@ function endGame() {
   for (let i = 0; i < ROCKS.length; i++) {
     ROCKS[i].remove();
   }
+  window.removeEventListener('keydown', moveDodger())
   alert("YOU LOSE!");
-  window.removeEventListener('keydown', moveDodger()) // Should moveDodger be called with ()?
 }
 
 function moveDodger(e) {
